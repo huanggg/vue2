@@ -1,14 +1,6 @@
 <template>
   <div class="hello">
 
-    <el-table :data="tableData" style="width: 100%">
-      <el-table-column prop="date" label="日期" width="180">
-      </el-table-column>
-      <el-table-column prop="name" label="姓名" width="180">
-      </el-table-column>
-      <el-table-column prop="address" label="地址">
-      </el-table-column>
-    </el-table>
     <vxe-table resizable row-id="id" :data="tableData" :tree-config="{children: 'children'}" :checkbox-config="{labelField: 'name', checkRowKeys: [10053, 23666]}" @checkbox-change="selectChangeEvent">
       <vxe-table-column type="checkbox" title="Sex" width="400" tree-node></vxe-table-column>
       <vxe-table-column field="size" title="Size"></vxe-table-column>
