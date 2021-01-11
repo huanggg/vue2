@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+
     <el-table :data="tableData" style="width: 100%">
       <el-table-column prop="date" label="日期" width="180">
       </el-table-column>
